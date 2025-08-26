@@ -6,9 +6,15 @@ export function TodoProvider({ children }) {
   const [todo, setTodo] = useState("");
   const [todos, setTodos] = useState([]);
   const [priority, setPriority] = useState("");
-  const [status, setStatus] = useState("all");
+  const [status, setStatus] = useState("");
   const [deadLine, setDeadLine] = useState("");
   const [tags, setTags] = useState("");
+  const [isDark, setIsDark] = useState(false);
+
+  const toggleTheme = () => {
+    setIsDark((prev) => !prev);
+    document.documentElement.classList.toggle("light");
+  };
 
   const addTodo = () => {
     if (todo.trim() !== "") {
@@ -67,9 +73,11 @@ export function TodoProvider({ children }) {
         setDeadLine,
         tags,
         setTags,
+        isDark,
+        toggleTheme,
       }}
     >
-      {children}
+      <div>{children}</div>
     </TodoContext.Provider>
   );
 }

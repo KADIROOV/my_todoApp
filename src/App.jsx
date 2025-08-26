@@ -10,10 +10,8 @@ function App() {
                  bg-[url('/src/assets/violet_wallpaper.jpg')] 
                  bg-cover bg-center"
     >
-      {/* Overlay */}
       <div className="absolute inset-0 bg-black/70"></div>
 
-      {/* Content */}
       <TodoProvider>
         <div className="relative z-10">
           <Header />

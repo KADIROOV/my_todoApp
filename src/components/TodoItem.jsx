@@ -1,8 +1,6 @@
-// ✅ Grid faqat containerga qo'yiladi, har bir item oddiy card bo'lishi kerak
 function TodoItem({ item, deleteTodo, toggleComplete }) {
   return (
-    <div className=" border-violet-200 hover:shadow-violet-300 transition duration-300 bg-white rounded-2xl p-5 border h-44 w-90  sm:w-[300px]s  overflow-hidden">
-      {/* Top section: tags + delete */}
+    <div className=" border-violet-200   transition duration-300 bg-white rounded-2xl p-5 border h-44 w-90  sm:w-[300px]s  overflow-hidden">
       <div className="flex justify-between items-start ">
         <div className="flex gap-2 flex-wrap">
           {item.tags && (
