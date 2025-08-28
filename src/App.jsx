@@ -7,14 +7,13 @@ function App() {
   return (
     <div
       className="relative min-h-screen 
-                 bg-[url('/src/assets/violet_wallpaper.jpg')] 
+                 
                  bg-cover bg-center"
     >
-      <div className="absolute inset-0 bg-black/70"></div>
+      <div className="absolute inset-0 bg-[#1B1A1A]"></div>
 
       <TodoProvider>
         <div className="relative z-10">
-          <Header />
           <div className="flex">
             <TodoInput />
             <TodoList />

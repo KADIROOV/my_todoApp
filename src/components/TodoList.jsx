@@ -6,7 +6,7 @@ function TodoList() {
 
   return (
     <>
-      <div className="mx-auto  grid grid-cols-1 sm:grid-cols-2 gap-x-30 gap-y-4 p-6">
+      <div className="ml-40 flex flex-col gap-10 p-6">
         {todos.map((todo) => (
           <TodoItem
             key={todo.id}
